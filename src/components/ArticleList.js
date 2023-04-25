@@ -1,6 +1,7 @@
 import React from "react";
 import Article from "./Article";
 
+
 const ArticleList = ({ posts }) => {
     return (
         <main>
@@ -11,7 +12,7 @@ const ArticleList = ({ posts }) => {
     );
 };
 
-const App = () => {
+const Article = () => {
     // Define an array of post objects to be passed as props
     const posts = [
         { id: 1, title: 'Post 1', content: 'This is the content for Post 1.' },
@@ -22,7 +23,7 @@ const App = () => {
     return (
         <div>
             {/* Render the ArticleList component and pass in the posts array as a prop */}
-            <ArticleList posts={posts} />
+            /*<ArticleList posts={posts} />
         </div>
     );
 };

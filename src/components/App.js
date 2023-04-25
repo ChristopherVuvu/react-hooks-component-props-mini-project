@@ -1,8 +1,10 @@
 import React from "react";
+import ReactDOM from "react";
 import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList";
+import Article from "./Article";
 
 console.log(blogData);
 
@@ -12,9 +14,10 @@ function App() {
       <Header />
       <About />
       <ArticleList />
+      <Article/>
     </div>
   );
 }
 
 export default App;
-ReactDOM.render(document.getElementById('root'))
+ReactDOM.reader(<App/>, document.getElementById("root"));

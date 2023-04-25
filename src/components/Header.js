@@ -1,12 +1,15 @@
 import React from "react";
 
-const Header = ({ blogName }) => {
+function BlogContent(props) {
+    return <div>{props.articleText}</div>;
+}
+
+function Header() {
     return (
         <header>
-            <h1>{blogName}</h1>
+            <BlogContent articleText="Overreacted" />
         </header>
-    );
-};
-
+        );
+}
 
 export default Header;
